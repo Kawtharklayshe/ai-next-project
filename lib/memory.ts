@@ -34,7 +34,7 @@ export class MemoryManager {
   ) {
     const pineconeClient = <PineconeClient>this.vectorDBClient;
 
-    const pineconeIndex = pineconeClient.Index(
+    const pineconeIndex:any = pineconeClient.Index(
       process.env.PINECONE_INDEX! || ""
     );
 
